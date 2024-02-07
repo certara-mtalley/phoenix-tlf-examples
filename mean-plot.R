@@ -1,7 +1,7 @@
 library(ggplot2)
 library(dplyr)
 
-data <- readxl::read_xls("C:/Users/mtalley/Downloads/Simple Plot.xls")
+data <- readxl::read_xls("./Data/Simple Plot.xls")
 data <- data[-1, ] |>
     transform(X = Time,
               Y = Conc,

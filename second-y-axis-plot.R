@@ -1,7 +1,7 @@
 library(ggplot2)
 library(dplyr)
 
-data <- readxl::read_xls("C:/Users/mtalley/Downloads/Second Y Axis.xls")
+data <- readxl::read_xls("./Data/Second Y Axis.xls")
 data <- data[-1, ] |>
     transform(X = Time,
               Y = Conc_Plasma,
